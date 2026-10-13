@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products | VERTEX Electronics</title>
+
+    <link rel="stylesheet" href="products.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="store-header">
+
+    <div class="header-container">
+
+        <a href="index.html" class="logo">
+            <span>V</span> VERTEX
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index2.html" class="active">Products</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <button class="cart-button" id="cartButton">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartCount">0</span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="catalogue-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            <i class="fas fa-bolt"></i>
+            VERTEX ELECTRONICS
+        </span>
+
+        <h1>
+            Explore Our
+            <span>Products</span>
+        </h1>
+
+        <p>
+            Discover quality electronics and home appliances
+            for your home, office and business.
+        </p>
+
+        <div class="hero-search">
+
+            <i class="fas fa-search"></i>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search TV, refrigerator, washing machine..."
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORY SECTION ================= -->
+
+<section class="catalogue-section">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="small-title">SHOP BY CATEGORY</span>
+
+            <h2>Find What You Need</h2>
+        </div>
+
+        <p id="productCounter">
+            Showing all products
+        </p>
+
+    </div>
+
+
+    <div class="category-buttons">
+
+        <button class="category-btn active" data-category="all">
+            <i class="fas fa-border-all"></i>
+            All Products
+        </button>
+
+        <button class="category-btn" data-category="tv">
+            <i class="fas fa-tv"></i>
+            TVs & Audio
+        </button>
+
+        <button class="category-btn" data-category="fridge">
+            <i class="fas fa-temperature-low"></i>
+            Refrigerators
+        </button>
+
+        <button class="category-btn" data-category="washing">
+            <i class="fas fa-shirt"></i>
+            Washing Machines
+        </button>
+
+        <button class="category-btn" data-category="microwave">
+            <i class="fas fa-fire"></i>
+            Microwaves
+        </button>
+
+        <button class="category-btn" data-category="dishwasher">
+            <i class="fas fa-soap"></i>
+            Dishwashers
+        </button>
+
+        <button class="category-btn" data-category="ac">
+            <i class="fas fa-snowflake"></i>
+            Air Conditioners
+        </button>
+
+        <button class="category-btn" data-category="cooker">
+            <i class="fas fa-kitchen-set"></i>
+            Cookers
+        </button>
+
+        <button class="category-btn" data-category="builtin">
+            <i class="fas fa-house"></i>
+            Built-In
+        </button>
+
+        <button class="category-btn" data-category="small">
+            <i class="fas fa-blender"></i>
+            Small Appliances
+        </button>
+
+    </div>
+
+
+    <!-- ================= FILTER BAR ================= -->
+
+    <div class="filter-bar">
+
+        <div class="results-info">
+            <strong>Our Products</strong>
+            <span id="resultsText">36 products</span>
+        </div>
+
+        <div class="sort-area">
+
+            <label for="sortProducts">
+                Sort by:
+            </label>
+
+            <select id="sortProducts">
+
+                <option value="featured">
+                    Featured
+                </option>
+
+                <option value="low">
+                    Price: Low to High
+                </option>
+
+                <option value="high">
+                    Price: High to Low
+                </option>
+
+                <option value="name">
+                    Name: A-Z
+                </option>
+
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PRODUCT GRID ================= -->
+
+    <div class="product-grid" id="productGrid">
+
+        <!-- Products generated by JavaScript -->
+
+    </div>
+
+
+    <div class="no-products" id="noProducts">
+
+        <i class="fas fa-box-open"></i>
+
+        <h3>No products found</h3>
+
+        <p>
+            Try another search or choose a different category.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= WHY VERTEX ================= -->
+
+<section class="why-section">
+
+    <div class="section-heading centered">
+
+        <span class="small-title">
+            WHY CHOOSE VERTEX
+        </span>
+
+        <h2>Shopping Made Simple</h2>
+
+        <p>
+            We make it easier to find the technology and appliances
+            you need.
+        </p>
+
+    </div>
+
+
+    <div class="benefits">
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                <i class="fas fa-shield-halved"></i>
+            </div>
+
+            <h3>Quality Products</h3>
+
+            <p>
+                Carefully selected electronics and appliances
+                from trusted brands.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                <i class="fas fa-truck-fast"></i>
+            </div>
+
+            <h3>Reliable Delivery</h3>
+
+            <p>
+                Convenient delivery options for customers
+                across Kenya.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+
+            <h3>Customer Support</h3>
+
+            <p>
+                Get assistance before and after your purchase.
+            </p>
+
+        </div>
+
+
+        <div class="benefit">
+
+            <div class="benefit-icon">
+                <i class="fas fa-tags"></i>
+            </div>
+
+            <h3>Competitive Prices</h3>
+
+            <p>
+                Great value across electronics and home appliances.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CART PANEL ================= -->
+
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<aside class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+
+        <h2>
+            <i class="fas fa-shopping-cart"></i>
+            Your Cart
+        </h2>
+
+        <button id="closeCart">
+            <i class="fas fa-xmark"></i>
+        </button>
+
+    </div>
+
+    <div class="cart-items" id="cartItems">
+
+        <div class="empty-cart">
+
+            <i class="fas fa-cart-shopping"></i>
+
+            <h3>Your cart is empty</h3>
+
+            <p>
+                Add products to your cart to see them here.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                KSh 0
+            </strong>
+
+        </div>
+
+        <button class="checkout-btn">
+            Proceed to Checkout
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="store-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo">
+                <span>V</span> VERTEX
+            </a>
+
+            <p>
+                Technology. Innovation. Solutions.
+            </p>
+
+            <div class="socials">
+
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Shop</h3>
+
+            <a href="#" data-footer-category="tv">
+                TVs & Audio
+            </a>
+
+            <a href="#" data-footer-category="fridge">
+                Refrigerators
+            </a>
+
+            <a href="#" data-footer-category="washing">
+                Washing Machines
+            </a>
+
+            <a href="#" data-footer-category="microwave">
+                Microwaves
+            </a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Support</h3>
+
+            <a href="index.html#contact">
+                Contact Us
+            </a>
+
+            <a href="#">
+                Delivery
+            </a>
+
+            <a href="#">
+                Warranty
+            </a>
+
+            <a href="#">
+                FAQs
+            </a>
+
+        </div>
+
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>
+                <i class="fas fa-phone"></i>
+                +254 758  996 368
+            </p>
+
+            <p>
+                <i class="fas fa-envelope"></i>
+                info@vertex.co.ke
+            </p>
+
+            <p>
+                <i class="fas fa-location-dot"></i>
+                Nairobi, Kenya
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 VERTEX Electronics. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="products.js"></script>
+
+</body>
+</html>
